@@ -10,7 +10,7 @@
 <body>
     <div class="container-overlay container-fluid">
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
             <a class="navbar-brand" href="#"><img class="logo" src="img/logo.png" alt="Logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -22,7 +22,7 @@
                   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Services <span class="sr-only"></span></a>
+                  <a class="nav-link" href="#services">Services <span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Portfolio <span class="sr-only"></span></a>
@@ -48,9 +48,62 @@
           <main class="jumbotron">
               <h1 class="text-center">Devotion</h1>
               <h2 class="text-center">Solutions</h2>
-              <p class="lead text-center">Inovative Software Solutions</p>
+              <p class="lead text-center moto">Inovative Software Solutions</p>
           </main>
 
+          <!-- ***** Our Classes Start ***** -->
+    <section class="section mt-5" id="services">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-6 offset-lg-3">
+                  <div class="section-heading mt-5">
+                      <h2 style="margin: initial;">Our <em>Services</em></h2>
+                      
+                      <p class="text">Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra ipsum dolor, ultricies fermentum massa consequat eu.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="row" id="tabs">
+            <div class="col-lg-4">
+              <ul>
+                <li onclick="swapTab(0)"><a href='#tabs-1' class="tab text-nowrap active"><img src="img/logo.png" alt="">Virtual Reality</a></li>
+                <li onclick="swapTab(1)"><a href='#tabs-2'class="tab text-nowrap"><img src="img/logo.png" alt="">Game Development</a></a></li>
+                <li onclick="swapTab(2)"><a href='#tabs-3'class="tab text-nowrap"><img src="img/logo.png" alt="">Mobile Development</a></a></li>
+                <li onclick="swapTab(3)"><a href='#tabs-4'class="tab text-nowrap"><img src="img/logo.png" alt="">Web Development</a></a></li>
+                
+              </ul>
+            </div>
+            <div class="col-lg-8">
+              <section class='tabs-content ml-auto'>
+                <article id='tabs-1' class="active tabC">
+                  <img src="img/vr.jpg" alt="First Class">
+                  <h2 class="moto">Title 1</h2>
+                  <p class="text" style="text-align: start;">Phasellus convallis mauris sed elementum vulputate. Donec posuere leo sed dui eleifend hendrerit. Sed suscipit suscipit erat, sed vehicula ligula. Aliquam ut sem fermentum sem tincidunt lacinia gravida aliquam nunc. Morbi quis erat imperdiet, molestie nunc ut, accumsan diam.</p>
+                </article>
+                <article id='tabs-2' class="hidden tabC">
+                  <img src="img/game.jpg" alt="Second Training">
+                  <h2 class="moto">Title 2</h2>
+                  <p class="text" style="text-align: start;">Phasellus convallis mauris sed elementum vulputate. Donec posuere leo sed dui eleifend hendrerit. Sed suscipit suscipit erat, sed vehicula ligula. Aliquam ut sem fermentum sem tincidunt lacinia gravida aliquam nunc. Morbi quis erat imperdiet, molestie nunc ut, accumsan diam.</p>
+                    
+                </article>
+                <article id='tabs-3' class="hidden tabC">
+                  <img src="img/web.jpg" alt="Third Class">
+                  <h2 class="moto">Title 3</h2>
+                  <p class="text" style="text-align: start;">Phasellus convallis mauris sed elementum vulputate. Donec posuere leo sed dui eleifend hendrerit. Sed suscipit suscipit erat, sed vehicula ligula. Aliquam ut sem fermentum sem tincidunt lacinia gravida aliquam nunc. Morbi quis erat imperdiet, molestie nunc ut, accumsan diam.</p>
+                         
+                </article>
+                <article id='tabs-4' class="hidden tabC">
+                  <img src="img/mobile.jpg" alt="Fourth Training">
+                  <h2 class="moto">Title 4</h2>
+                  <p class="text" style="text-align: start;">Phasellus convallis mauris sed elementum vulputate. Donec posuere leo sed dui eleifend hendrerit. Sed suscipit suscipit erat, sed vehicula ligula. Aliquam ut sem fermentum sem tincidunt lacinia gravida aliquam nunc. Morbi quis erat imperdiet, molestie nunc ut, accumsan diam.</p>
+                
+                </article>
+              </section>
+            </div>
+          </div>
+      </div>
+  </section>
+  <!-- ***** Our Classes End ***** -->
 
 
 
@@ -63,5 +116,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <!--Bootstrap javascript-->
+<script src="js/main.js"></script>
 </body>
 </html>
